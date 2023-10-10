@@ -27,25 +27,25 @@ const Navbar = () => {
               className=" menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 font-semibold "
             >
               <Link
-                className=" hover:text-orange-500 hover:border-b-2 hover:border-orange-500"
+                className=" hover:text-[#EEBF63] hover:border-b-2 hover:border-[#EEBF63]"
                 to="/"
               >
-                <li>Home</li>
+                <li id="home">Home</li>
               </Link>
               <Link
-                className=" hover:text-orange-500 hover:border-b-2 hover:border-orange-500"
+                className=" hover:text-[#EEBF63] hover:border-b-2 hover:border-[#EEBF63]"
                 to="/about"
               >
                 <li>About</li>
               </Link>
               <Link
-                className=" hover:text-orange-500 hover:border-b-2 hover:border-orange-500"
+                className=" hover:text-[#EEBF63] hover:border-b-2 hover:border-[#EEBF63]"
                 to="/achivement"
               >
                 <li>Achivements</li>
               </Link>
               <Link
-                className=" hover:text-orange-500 hover:border-b-2 hover:border-orange-500"
+                className=" hover:text-[#EEBF63] hover:border-b-2 hover:border-[#EEBF63]"
                 to="/contact"
               >
                 <li>Contact</li>
@@ -57,29 +57,31 @@ const Navbar = () => {
             <span className="">Abdul Motin</span>{" "}
           </Link>
         </div>
-        <div className="navbar-end hidden lg:flex">
+        <div className="navbar-end hidden lg:flex lg:mr-[100px]">
           <ul className="menu menu-horizontal px-1 font-semibold ">
             <Link
               to="/"
-              className="mr-5 hover:text-orange-500 hover:border-b-2 hover:border-orange-500"
+              className="mr-5 active hover:text-[#EEBF63] hover:border-b-2 hover:border-[#EEBF63]"
+              style={{ color: location.pathname === '/' ? '#EEBF63' : 'inherit' }}
+
             >
-              <li>Home</li>
+              <li id="home">Home</li>
             </Link>
             <Link
               to="/about"
-              className="mr-5 hover:text-orange-500 hover:border-b-2 hover:border-orange-500"
+              className="mr-5 hover:text-[#EEBF63] hover:border-b-2 hover:border-[#EEBF63]"
             >
               <li>About</li>
             </Link>
             <Link
               to="/achivement"
-              className="mr-5 hover:text-orange-500 hover:border-b-2 hover:border-orange-500"
+              className="mr-5 hover:text-[#EEBF63] hover:border-b-2 hover:border-[#EEBF63]"
             >
               <li>Achivements</li>
             </Link>
             <Link
               to="/contact"
-              className="mr-5 hover:text-orange-500 hover:border-b-2 hover:border-orange-500"
+              className="mr-5 hover:text-[#EEBF63] hover:border-b-2 hover:border-[#EEBF63]"
             >
               <li>Contact</li>
             </Link>

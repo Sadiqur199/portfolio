@@ -29,21 +29,14 @@ const router = createBrowserRouter([
       {
         path:'/contact',
         element:<Contact></Contact>
-      }
-
-    ],
-
-  },
-  {
-    path: "/",
-    element: <Main></Main>,
-    children:[
+      },
       {
         path:'/achivement',
         element:<Achivement></Achivement>
       }
 
     ],
+
   },
 
 ]);
