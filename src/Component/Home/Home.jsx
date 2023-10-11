@@ -1,17 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import image1 from "../../assets/image/ASM.png";
 import { BiBasketball, BiLogoYoutube } from "react-icons/bi";
 import { HiMail } from "react-icons/hi";
 import { BsArrowDownShort } from "react-icons/bs";
 import image2 from '../../assets/image/ASM_Abdul_Motin 1.png'
+import Aos from "aos";
+import 'aos/dist/aos.css'
 
 const Home = () => {
+  useEffect(()=>{
+    Aos.init({duration: 2000})
+  },[])
+
   return (
     <div className="mt-14 mb-14">
       {/* header top section */}
       <div className="flex mb-24">
         {/* text section */}
-        <div>
+        <div data-aos='fade-left'>
           <h1 className="text-gray-300 mb-7">HEY!</h1>
           <h1 className="font-bold text-3xl mb-5">
             I’m{" "}
@@ -50,17 +56,17 @@ const Home = () => {
         </div>
 
         {/* image section */}
-        <div className="md:ml-[450px]">
-          <img src={image1} alt="" />
+        <div data-aos='fade-right' className="md:ml-[450px] ml-5 md:mt-0 mt-24">
+          <img src={image1}  alt="" />
         </div>
       </div>
 
       {/* header bottom image */}
-      <div className="mt-28 ">
-       <img className="mx-auto mb-5" src={image2} alt="" />
+      <div data-aos='fade-left' className="mt-28 ">
+       <img className="mx-auto mb-5 w-[100%] h-[100%]" src={image2} alt="" />
       </div>
       <div>
-        <p className="text-center text-lg font-bold text-black">“Education, knowledge and wisdom, words that are connected yet <br /> massively different. How you deliver something is the cue differential”.</p>
+        <p className="text-justify text-lg font-bold text-black">“Education, knowledge and wisdom, words that are connected yet  massively different. How you deliver something is the cue differential”.</p>
       </div>
     </div>
   );
