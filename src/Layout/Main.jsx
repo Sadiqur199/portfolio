@@ -5,7 +5,7 @@ import Footer from '../Component/Footer/Footer';
 
 const Main = () => {
   return (
-    <div className='ml-[100px] mr-[100px]'>
+    <div className='md:ml-[100px] mmd:r-[100px]'>
       <Navbar></Navbar>
       <Outlet></Outlet>
       <Footer></Footer>

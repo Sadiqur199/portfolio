@@ -5,7 +5,7 @@ import { AiOutlineArrowUp } from "react-icons/ai";
 
 const Footer = () => {
   return (
-    <div className="md:flex lg:flex md:justify-between p-14">
+    <div className="md:flex lg:flex md:justify-between md:p-14">
       <div>
         <h1 className="font-semibold text-3xl">Let's Connect</h1>
       </div>
