@@ -15,9 +15,9 @@ const Home = () => {
   return (
     <div className="mt-14 mb-14">
       {/* header top section */}
-      <div className="flex mb-24">
+      <div className="md:flex mb-24">
         {/* text section */}
-        <div data-aos='fade-left'>
+        <div data-aos='fade-left' className="ml-5 md:ml-0 mr-5 md:mr-0">
           <h1 className="text-gray-300 mb-7">HEY!</h1>
           <h1 className="font-bold text-3xl mb-5">
             I’m{" "}
@@ -48,7 +48,7 @@ const Home = () => {
               {" "}
               <HiMail size={25} /> Mail ME
             </button>
-            <button className="btn btn-outline ml-5 border-[#EEBF63] font-semibold">
+            <button className="btn btn-outline md:ml-5 ml-2 border-[#EEBF63] font-semibold">
               {" "}
               <BsArrowDownShort size={25} /> Download CV
             </button>
@@ -62,11 +62,11 @@ const Home = () => {
       </div>
 
       {/* header bottom image */}
-      <div data-aos='fade-left' className="mt-28 ">
+      <div data-aos='fade-left' className="mt-28 ml-5 md:ml-0 mr-5 md:mr-0">
        <img className="mx-auto mb-5 w-[100%] h-[100%]" src={image2} alt="" />
       </div>
       <div>
-        <p className="text-justify text-lg font-bold text-black">“Education, knowledge and wisdom, words that are connected yet  massively different. How you deliver something is the cue differential”.</p>
+        <p className="text-justify text-lg font-bold text-black ml-5 md:ml-0 mr-5 md:mr-0">“Education, knowledge and wisdom, words that are connected yet  massively different. How you deliver something is the cue differential”.</p>
       </div>
     </div>
   );

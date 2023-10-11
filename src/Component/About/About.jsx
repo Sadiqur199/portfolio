@@ -16,7 +16,7 @@ const About = () => {
     Aos.init({duration: 2000})
   },[])
   return (
-    <div>
+    <div className="md:ml-0 md:mr-0 ml-5 mr-5">
       <div className="flex mt-20 mb-14">
         <div data-aos='fade-left' className="md:mt-0 mt-14">
           <img src={image1} className="h-full w-full" alt="" />

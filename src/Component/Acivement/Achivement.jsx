@@ -14,16 +14,16 @@ const Achivement = () => {
     Aos.init({ duration: 2000 });
   }, []);
   return (
-    <div>
-      <div data-aos="fade-right">
+    <div className="mr-5 ml-5 md:ml-0 md:mr-0">
+      <div data-aos="fade-right" className="">
         <img src={image1} className="w-[100%] h-[100%] mt-14 mb-10" alt="" />
       </div>
 
-      <div data-aos="fade-left">
+      <div data-aos="fade-left" className="">
         <img src={image2} className="w-[100%] h-[100%] mt-14 mb-10" alt="" />
       </div>
 
-      <div data-aos="fade-right">
+      <div data-aos="fade-right" className="">
         <img src={image3} className="w-[100%] h-[100%] mt-14 mb-10" alt="" />
       </div>
 
@@ -31,10 +31,10 @@ const Achivement = () => {
         <img
           data-aos="fade-left"
           src={image4}
-          className="w-[100%] h-[100%] mt-14 mb-10"
+          className="w-[100%] h-[100%] mt-14 mb-10 "
           alt=""
         />
-        <p className="text-justify mt-10 mb-10 text-xl font-bold">
+        <p className="text-justify mt-10 mb-10 text-xl font-bold ">
           Air Force <br /> ASM Abdul Motin, a prominent leader in Bangladesh,
           gained leadership skills at a young age and represented the country in
           Japan. He graduated from the Air Force Academy and became a VVIP
@@ -52,7 +52,7 @@ const Achivement = () => {
         <img
           data-aos="fade-right"
           src={image5}
-          className="w-[100%] h-[100%] mt-14 mb-10"
+          className="w-[100%] h-[100%] mt-14 mb-10 "
           alt=""
         />
         <p className="text-justify mt-10 mb-10 ">
@@ -73,7 +73,7 @@ const Achivement = () => {
           className="w-[100%] h-[100%] mt-14 mb-10"
           alt=""
         />
-        <p className="text-justify mt-10 mb-10 ">
+        <p className="text-justify mt-10 mb-10">
           “I am delighted to see that ASM Abdul Motin is addressing a vital
           issue in our lives at the time when the world is filled with doom and
           gloom of financial and other crises. What is the role individuals can
